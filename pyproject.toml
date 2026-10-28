@@ -1,8 +1,8 @@
-# Konfiguracja projektu Python: uv, ruff, mypy, pytest (Tydzień 0.1)
+# Python project configuration: uv, ruff, mypy, pytest (Week 0.1)
 #
 # TODO:
-# 1. Sekcja [project] (name, version, requires-python, dependencies)
-# 2. Sekcja [build-system] dla układu src-layout
-# 3. Konfiguracja [tool.ruff] oraz [tool.ruff.lint]
-# 4. Konfiguracja [tool.mypy] (tryb strict)
-# 5. Konfiguracja [tool.pytest.ini_options]
+# 1. [project] section (name, version, requires-python, dependencies)
+# 2. [build-system] section for src-layout packaging
+# 3. [tool.ruff] and [tool.ruff.lint] configuration
+# 4. [tool.mypy] configuration (strict mode)
+# 5. [tool.pytest.ini_options] configuration

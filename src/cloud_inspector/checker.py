@@ -1,6 +1,6 @@
-"""Logika diagnostyczna (Tydzień 0.1).
+"""Diagnostic logic (Week 0.1).
 
 TODO:
-- Zdefiniuj interfejs (np. typing.Protocol) dla klienta wykonującego sprawdzenia (pod testy i mockowanie)
-- Zaimplementuj główny serwis diagnostyczny wykorzystujący modele, wyjątki i strukturalny logger
+- Define an interface (e.g., typing.Protocol) for the probe client (to enable clean testing and mocking)
+- Implement the core diagnostic service using the models, domain exceptions, and structured logger
 """

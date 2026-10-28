@@ -1,6 +1,6 @@
-# Własny moduł sieciowy VPC (Tydzień 0.2)
+# Custom VPC network module (Week 0.2)
 #
 # TODO:
-# 1. Zasób google_compute_network (custom mode: auto_create_subnetworks = false)
-# 2. Zasoby google_compute_subnetwork tworzone dynamicznie (for_each) wraz z secondary_ip_range pod GKE
-# 3. Opcjonalnie: Cloud Router + Cloud NAT
+# 1. google_compute_network resource (custom mode: auto_create_subnetworks = false)
+# 2. google_compute_subnetwork resources created dynamically (for_each) with secondary_ip_range for GKE
+# 3. Optional: Cloud Router + Cloud NAT

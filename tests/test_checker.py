@@ -1,7 +1,7 @@
-"""Testy jednostkowe pytest (Tydzień 0.1).
+"""Unit tests with pytest (Week 0.1).
 
 TODO:
-- Napisz testy z użyciem @pytest.fixture
-- Wykorzystaj @pytest.mark.parametrize do przetestowania wielu przypadków brzegowych
-- Użyj mocków (unittest.mock / pytest-mock) do odizolowania logiki w checker.py od wywołań sieciowych
+- Write test fixtures using @pytest.fixture
+- Use @pytest.mark.parametrize to cover multiple scenarios and edge cases
+- Use mocks (unittest.mock / pytest-mock) to isolate checker.py logic from external network calls
 """

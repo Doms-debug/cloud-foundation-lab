@@ -1,4 +1,4 @@
-# Zmienne wejściowe modułu vpc-network (Tydzień 0.2)
+# Input variables for the vpc-network module (Week 0.2)
 #
 # TODO:
-# Zdefiniuj zmienne wymagane przez moduł sieciowy (project_id, network_name, subnets itp.).
+# Define variables required by the network module (project_id, network_name, subnets, etc.).

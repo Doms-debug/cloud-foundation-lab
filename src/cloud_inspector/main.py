@@ -1,7 +1,7 @@
-"""Entrypoint HTTP/CLI i obsługiwanie SIGTERM (Tydzień 0.1).
+"""HTTP/CLI entrypoint and SIGTERM handling (Week 0.1).
 
 TODO:
-- Zaimplementuj obsługę sygnałów SIGTERM i SIGINT (moduł signal) do graceful shutdown
-- Wystaw endpointy HTTP (np. healthcheck / diagnostyka) lub interfejs CLI
-- Zadbaj o czyste zakończenie pracy procesu i poprawny kod wyjścia
+- Implement SIGTERM and SIGINT signal handling (signal module) for graceful shutdown
+- Expose HTTP endpoints (e.g., healthcheck / diagnostics) or a CLI interface
+- Ensure clean resource teardown and proper exit codes
 """

@@ -1,1 +1,1 @@
-"""Pakiet cloud_inspector."""
+"""Main cloud_inspector package."""

@@ -1,5 +1,5 @@
-# Wartości wyjściowe Terraform (Tydzień 0.2)
+# Terraform output values (Week 0.2)
 #
 # TODO:
-# Wyeksportuj kluczowe identyfikatory zasobów (np. ID sieci VPC, URL repozytorium Artifact Registry,
-# nazwę klastra GKE, identyfikator Workload Identity Provider oraz adres Service Accounta).
+# Export key resource identifiers (e.g., VPC network ID, Artifact Registry repository URL,
+# GKE cluster name, Workload Identity Provider resource name, and CI/CD Service Account email).

@@ -1,59 +1,58 @@
 # Cloud Foundation Lab (`cloud-inspector`)
 
-Repozytorium laboratoryjne łączące inżynierię oprogramowania w Pythonie, konteneryzację, Infrastructure as Code (Terraform), Kubernetes (GKE + Kustomize) oraz bezpieczne CI/CD (GitHub Actions + OIDC).
+Hands-on lab repository combining production-grade Python software engineering, containerization, Infrastructure as Code (Terraform), Kubernetes (GKE + Kustomize), and keyless CI/CD (GitHub Actions + OIDC).
 
-## Struktura projektu
+## Project Structure
 
 ```text
 cloud-foundation-lab/
 ├── .github/
 │   └── workflows/
-│       └── deploy.yml          # Pipeline CI/CD z OIDC (Tydzień 0.4)
+│       └── deploy.yml          # CI/CD pipeline with OIDC (Week 0.4)
 ├── infra/
 │   ├── modules/
-│   │   └── vpc-network/        # Własny moduł sieciowy (Tydzień 0.2)
+│   │   └── vpc-network/        # Custom network module (Week 0.2)
 │   ├── main.tf                 # VPC, IAM, GKE, Artifact Registry, WIF
-│   ├── variables.tf            # Silnie typowane zmienne z walidacją
+│   ├── variables.tf            # Strongly-typed variables with validation
 │   └── outputs.tf
 ├── k8s/
-│   ├── base/                   # Deployment, Service, ConfigMap, PDB (Tydzień 0.3)
+│   ├── base/                   # Deployment, Service, ConfigMap, PDB (Week 0.3)
 │   └── overlays/
-│       └── dev/                # Kustomize overlay pod środowisko dev
+│       └── dev/                # Kustomize overlay for the dev environment
 ├── src/
 │   └── cloud_inspector/
 │       ├── __init__.py
 │       ├── models.py           # Dataclasses (frozen=True, slots=True)
-│       ├── exceptions.py       # Własna hierarchia wyjątków
-│       ├── logger.py           # Strukturalne logowanie JSON + Context Manager
-│       ├── checker.py          # Logika diagnostyczna
-│       └── main.py             # Entrypoint HTTP/CLI i obsługiwanie SIGTERM
+│       ├── exceptions.py       # Custom exception hierarchy
+│       ├── logger.py           # Structured JSON logging + Context Manager
+│       ├── checker.py          # Diagnostic logic
+│       └── main.py             # HTTP/CLI entrypoint and SIGTERM handling
 ├── tests/
-│   └── test_checker.py         # Testy pytest (fixtures, parametrize, mocks)
+│   └── test_checker.py         # pytest unit tests (fixtures, parametrize, mocks)
 ├── Dockerfile                  # Multi-stage, non-root, exec form PID 1
-├── pyproject.toml              # Konfiguracja uv, ruff, mypy, pytest
+├── pyproject.toml              # Configuration for uv, ruff, mypy, pytest
 └── README.md
 ```
 
-## Szybki start (Lokalny development)
+## Quick Start (Local Development)
 
 ```bash
-# Utworzenie środowiska i instalacja zależności deweloperskich przez uv
+# Create virtual environment and install dev dependencies using uv
 uv sync --extra dev
 
-# Sprawdzenie formatowania i lintera
+# Run linter and formatter checks
 uv run ruff check .
 
-# Statyczna kontrola typów
+# Run static type checking
 uv run mypy
 
-# Uruchomienie testów jednostkowych
+# Run unit tests
 uv run pytest
 ```
 
-## Etapy laboratorium
+## Lab Roadmap
 
-- **Tydzień 0.1 – Python & Docker**: Implementacja pakietu `cloud_inspector` (`models.py`, `exceptions.py`, `logger.py`, `checker.py`, `main.py`), testy w `pytest` oraz bezpieczny, wieloetapowy `Dockerfile`.
-- **Tydzień 0.2 – Terraform (IaC)**: Budowa własnego modułu `vpc-network` oraz konfiguracja zasobów GCP (VPC, IAM, GKE, Artifact Registry, Workload Identity Federation).
-- **Tydzień 0.3 – Kubernetes & Kustomize**: Przygotowanie manifestów bazowych w `k8s/base` (z naciskiem na `securityContext`, sondy i `PodDisruptionBudget`) oraz narzutu środowiskowego w `k8s/overlays/dev`.
-- **Tydzień 0.4 – CI/CD z OIDC**: Konfiguracja potoku GitHub Actions w `.github/workflows/deploy.yml` wykorzystującego bezkluczowe uwierzytelnianie OIDC do GCP.
-
+- **Week 0.1 – Python & Docker**: Implement the `cloud_inspector` package (`models.py`, `exceptions.py`, `logger.py`, `checker.py`, `main.py`), unit tests in `pytest`, and a hardened multi-stage `Dockerfile`.
+- **Week 0.2 – Terraform (IaC)**: Build a custom `vpc-network` module and provision GCP infrastructure (VPC, IAM, GKE, Artifact Registry, Workload Identity Federation).
+- **Week 0.3 – Kubernetes & Kustomize**: Author base manifests in `k8s/base` (focusing on `securityContext`, probes, resource limits, and `PodDisruptionBudget`) and environment overlays in `k8s/overlays/dev`.
+- **Week 0.4 – CI/CD with OIDC**: Configure the GitHub Actions workflow in `.github/workflows/deploy.yml` using keyless OIDC authentication to GCP.

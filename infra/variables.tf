@@ -1,5 +1,5 @@
-# Silnie typowane zmienne z walidacją (Tydzień 0.2)
+# Strongly-typed input variables with validation (Week 0.2)
 #
 # TODO:
-# Zdefiniuj zmienne wejściowe (np. project_id, region, environment, subnets, github_repository)
-# używając złożonych typów (map, object, optional) oraz bloków validation {}.
+# Define input variables (e.g., project_id, region, environment, subnets, github_repository)
+# using complex types (map, object, optional) and validation {} blocks.

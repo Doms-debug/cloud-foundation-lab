@@ -1,9 +1,9 @@
-# Deployment aplikacji (Tydzień 0.3)
+# Application Deployment (Week 0.3)
 #
 # TODO:
-# Zdefiniuj Deployment z uwzględnieniem:
+# Define the Deployment including:
 # - securityContext (non-root, readOnlyRootFilesystem, drop ALL capabilities)
-# - requests i limits (CPU / Memory)
-# - livenessProbe oraz readinessProbe
-# - terminationGracePeriodSeconds dopasowanego do obsługi SIGTERM
-# - konfiguracji z ConfigMap
+# - resource requests and limits (CPU / Memory)
+# - livenessProbe and readinessProbe
+# - terminationGracePeriodSeconds aligned with SIGTERM handling
+# - environment configuration from ConfigMap

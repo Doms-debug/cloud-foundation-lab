@@ -1,8 +1,8 @@
-"""Strukturalne logowanie JSON + Context Manager (Tydzień 0.1).
+"""Structured JSON logging + Context Manager (Week 0.1).
 
 TODO:
-- Zaimplementuj własny logging.Formatter formatujący logi jako JSON (zgodny z GCP Cloud Logging)
-- Przygotuj funkcję konfigurującą logger
-- Zaimplementuj context manager (@contextmanager lub klasę __enter__/__exit__) mierzący czas wykonania
-  i logujący kontekst operacji oraz ewentualne wyjątki
+- Implement a custom logging.Formatter that serializes log records as JSON (GCP Cloud Logging compatible)
+- Provide a logger configuration helper function
+- Implement a context manager (@contextmanager or __enter__/__exit__ class) that measures execution time
+  and logs operation context and any unhandled exceptions
 """

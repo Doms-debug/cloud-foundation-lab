@@ -1,6 +1,6 @@
-"""Własna hierarchia wyjątków (Tydzień 0.1).
+"""Custom exception hierarchy (Week 0.1).
 
 TODO:
-- Zaprojektuj bazowy wyjątek domenowy aplikacji
-- Dodaj wyspecjalizowane klasy wyjątków (np. błędy konfiguracji, połączenia, timeoutu)
+- Design a base domain exception for the application
+- Add specialized exception subclasses (e.g., configuration, connection, and timeout errors)
 """

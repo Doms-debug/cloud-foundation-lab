@@ -1,5 +1,5 @@
-# Kustomize overlay pod środowisko dev (Tydzień 0.3)
+# Kustomize overlay for the dev environment (Week 0.3)
 #
 # TODO:
-# Wskaż bazę (../../base), ustaw docelowy namespace oraz dodaj patche
-# zmieniające parametry pod środowisko deweloperskie (np. repliki, limity, poziom logowania).
+# Reference the base (../../base), set the target namespace, and add patches
+# customizing parameters for the dev environment (e.g., replicas, resource limits, log level).

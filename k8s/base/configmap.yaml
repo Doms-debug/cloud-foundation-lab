@@ -1,3 +1,3 @@
-# ConfigMap (Tydzień 0.3)
+# ConfigMap (Week 0.3)
 #
-# TODO: Zdefiniuj ConfigMap ze zmiennymi środowiskowymi dla aplikacji cloud-inspector.
+# TODO: Define a ConfigMap with environment variables for the cloud-inspector application.
