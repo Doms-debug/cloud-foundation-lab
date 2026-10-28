@@ -1,0 +1,3 @@
+# PodDisruptionBudget (Tydzień 0.3)
+#
+# TODO: Zdefiniuj PodDisruptionBudget gwarantujący minimalną dostępność podów podczas prac serwisowych.

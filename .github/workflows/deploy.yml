@@ -1,0 +1,9 @@
+# Pipeline CI/CD z OIDC (Tydzień 0.4)
+# TODO:
+# 1. Zdefiniuj wyzwalacze (on: push / pull_request na gałąź main)
+# 2. Skonfiguruj minimalne uprawnienia tokenu (permissions: contents: read, id-token: write)
+# 3. Job 1 (Testy i jakość): uv, ruff, mypy, pytest
+# 4. Job 2 (Build & Deploy):
+#    - Autoryzacja do GCP przez OIDC (Workload Identity Federation, bez kluczy JSON)
+#    - Budowanie i publikacja obrazu Docker w Artifact Registry
+#    - Pobranie poświadczeń GKE i wdrożenie manifestów Kustomize (k8s/overlays/dev)

@@ -1,0 +1,4 @@
+# Kustomize base (Tydzień 0.3)
+#
+# TODO: Zdefiniuj listę zasobów bazowych (deployment.yaml, service.yaml, configmap.yaml, pdb.yaml)
+# oraz wspólne etykiety.

@@ -1,0 +1,3 @@
+# Service (Tydzień 0.3)
+#
+# TODO: Zdefiniuj Service wystawiający port HTTP kontenera wewnątrz klastra (ClusterIP).
